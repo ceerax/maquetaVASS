@@ -9,7 +9,7 @@
 
   /* Oculta la barra de desplazamiento vertical en navegadores basados en WebKit (Chrome, Safari) */
   scrollbar-width: none;
-  scrollbar-color: transparent transparent; /* Opcional: Puedes personalizar los colores de la barra de desplazamiento */
+  scrollbar-color: transparent transparent; 
 
   /* Opcional: Estilos adicionales para el track (fondo) de la barra de desplazamiento */
   &::-webkit-scrollbar {

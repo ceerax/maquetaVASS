@@ -34,8 +34,8 @@ $transition-speed: 0.3s;
     align-items: center;
     justify-content: start;
     height: 100%;
-    position: relative; /* Añadimos posicionamiento relativo al contenido */
-    z-index: 2; /* Elevamos el contenido por encima del pseudoelemento */
+    position: relative; 
+    z-index: 2;
   }
 
   /* Pseudoelemento ::before para la cortina que se desvanece hacia la izquierda */
@@ -47,10 +47,10 @@ $transition-speed: 0.3s;
     width: 100%;
     height: 100%;
     background-color: $cortina-color;
-    transform-origin: left; /* Establece el punto de transformación en el borde izquierdo */
-    transform: scaleX(0); /* Inicialmente la cortina no se muestra */
-    transition: transform $transition-speed; /* La transición será en el ancho de la cortina */
-    z-index: -1; /* Cambiamos el z-index a -1 para que esté detrás del contenido */
+    transform-origin: left; 
+    transform: scaleX(0); 
+    transition: transform $transition-speed;
+    z-index: -1; 
   }
 
   /* Estilos cuando se hace hover en una sección para la cortina que se desvanece hacia la izquierda */
@@ -67,9 +67,9 @@ $transition-speed: 0.3s;
     width: 100%;
     height: 100%;
     background-color: $cortina-color;
-    transform-origin: right; /* Establece el punto de transformación en el borde derecho */
-    transform: scaleX(0); /* Inicialmente la cortina no se muestra */
-    transition: transform $transition-speed; /* La transición será en el ancho de la cortina */
+    transform-origin: right; 
+    transform: scaleX(0); 
+    transition: transform $transition-speed; 
   
   }
 
@@ -88,8 +88,8 @@ font-size: 31px;
 
 @media (max-width: 769px) {
     .cortina-container {
-        height: inherit; /* Altura del 100% de la pantalla */
-        width: inherit; /* Ancho del 100% de la pantalla */
+        height: inherit; 
+        width: inherit; 
       }
 
 }
