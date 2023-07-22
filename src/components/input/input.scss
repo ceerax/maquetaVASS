@@ -1,0 +1,66 @@
+// InputWithAnimation.scss
+$input-container-width: 200px;
+$label-color: #999;
+$input-border-color: #ccc;
+$input-font-size: 16px;
+$label-focused-color: #666;
+$input-background-color: black;
+$input-text-color: white;
+
+.input-container {
+  position: relative;
+  width: $input-container-width;
+
+  .input-label {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    color: $label-color;
+    pointer-events: none;
+    transition: all 0.2s ease-out;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid $input-border-color;
+    font-size: $input-font-size;
+    // Eliminar el contorno (outline) en el input
+    outline: none;
+    background-color: $input-background-color;
+    color: $input-text-color;
+  }
+
+  .input-line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $input-border-color;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.2s ease-out;
+  }
+
+  // Estilo para el label en la posición animada hacia arriba
+  .input-label.focused {
+    bottom: 30px;
+    font-size: 14px;
+    color: $label-focused-color;
+  }
+
+  // Estilo para la línea en la posición animada hacia la derecha
+  .input-line.focused {
+    transform: scaleX(1);
+  
+  }
+}
+@media (max-width: 768px) {
+  .input-container {
+   input{
+    width: 78vw;
+   }
+  }
+}

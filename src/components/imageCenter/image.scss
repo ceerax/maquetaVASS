@@ -1,0 +1,68 @@
+$primary-color: #fff;
+$font-family: "Titillium Web", sans-serif !important;
+
+.img_backg {
+  background: url("https://vasscompany.com/wp-content/uploads/2020/09/contacto.jpg");
+  height: 75vh;
+  width: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+}
+
+.container_contact {
+  width: 100%;
+  position: relative;
+
+  div {
+    position: absolute;
+    right: 8.8%;
+    top: 64vh;
+  }
+
+  h3 {
+    font-size: 36px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.9;
+    letter-spacing: 0px;
+    text-align: right;
+    color: $primary-color;
+    font-family: $font-family;
+    opacity: 0.6;
+  }
+
+  @media (max-width: 768px) {
+    div {
+      position: absolute;
+      right: none;
+      top: 44vh;
+    }
+
+    h3 {
+      font-size: 107px;
+    }
+  }
+
+  @media (max-width: 672px) {
+    div {
+      top: 48vh;
+    }
+
+    h3 {
+      font-size: 90px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    div {
+      top: 56vh;
+    }
+
+    h3 {
+      font-size: 60px;
+    }
+  }
+}
