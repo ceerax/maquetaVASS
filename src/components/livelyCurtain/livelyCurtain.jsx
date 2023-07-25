@@ -36,7 +36,7 @@ const LivelyCurtain = () => {
 
   return (
     <div className="cortina-container">
-      <div className="row row m-0 h-100">
+      <div className="row m-0 h-100">
         <div
           className="col-12 col-md-3 section bg-dark"
           onMouseEnter={handleHover1}
